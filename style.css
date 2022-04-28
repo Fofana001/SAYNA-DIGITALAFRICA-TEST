@@ -1,0 +1,295 @@
+/* reset des marges */
+html, body, header, footer, section {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Selecteurs nav et header*/
+nav {
+    width: 100%;
+    background-color: #B11313;
+    margin: 0px;
+}
+
+nav ul {
+    float: right;
+    padding-top: 15px;
+}
+
+nav li {
+    font-size: 20px;
+    text-align: right;
+    display: inline;
+    list-style-type: none;
+    padding: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav img {
+    margin: 10px;
+}
+
+header {
+    background: url('img/img1.png') no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 870px;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Selecteurs h1, h2 */
+h1 {
+    font-family: 'FarFromHomecoming', 'Times New Roman', serif;
+    font-size: 7em;
+    font-weight: normal;
+    padding-top: 15%;
+}
+
+h2 {
+    font-family: 'FarFromHomecoming', 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: normal;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+/* Selecteurs input et footer */
+input {
+    padding: 15px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    background: none;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+input:hover {
+    background: #FFFFFF;
+    color: #B11313;
+}
+
+form input {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 5px 90px 5px 15px;
+    margin: 5px 15px;
+    color: #000000;
+}
+
+input[type="submit"] {
+    background: none;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    margin: 30px 30px;
+    font-weight: bold;
+}
+
+footer {
+    clear: both;
+    background-color: #000000;
+}
+
+
+/* Class */
+
+/* Class container */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container img[alt="X"] {
+    padding-bottom: 10px;
+}
+
+/* Class sec1, sec2 et sec3 */
+.sec1 {
+    background-color: #B11313;
+}
+
+.sec2 {
+    background: url("img/img5.png") no-repeat;
+    background-color: #114C92;
+    height: 555px;
+}
+
+.sec2 input[type="submit"]:hover {
+    background: #FFFFFF;
+    color: #114C92;
+}
+
+.sec3 {
+    background: url("img/img6.png") no-repeat;
+    background-color: #B11313;
+    background-position: top right;
+    height: 800px;
+}
+
+.sec3 .container {
+    width: 530px;
+    margin: 0px 10% 0px 10%;
+}
+
+.sec3 input[type="submit"]:hover {
+    background: #FFFFFF;
+    color: #B11313;
+}
+
+/* Class flexible et actor */
+.flexible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actor {
+    width: 325px;
+    margin: 5px 30px 30px 0px;
+    display: inline-block;
+}
+
+.actor p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 30px 15px 30px 0px;
+}
+
+.actor input {
+    background-color: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 50px;
+}
+
+.actor input:hover {
+    background-color: #FFFFFF;
+    color: #B11313;
+}
+
+/* Class navbas et reso */
+.navbas ul {
+    display: inline;
+}
+
+.navbas li {
+    list-style-type: none;
+    display: inline;
+    padding: 15px;
+}
+
+.navbas a {
+    text-decoration: none;
+    color: #FFFFFF;
+   
+}
+
+.navbas img {
+    padding: 15px 5px 0px 5px;
+}
+
+.navbas select {
+    padding: 5px 30px 5px 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    background: none;
+    color: #FFFFFF;    
+}
+
+.navbas select:hover {
+    background: #B11313;
+    color: #FFFFFF;    
+    border: 1px solid #B11313;
+}
+
+.reso {
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.reso a {
+    margin: 5px;
+}
+
+.reso img {
+    background-color: #B11313;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.logoM {
+    display: none;
+}
+
+/* Font-face */
+@font-face {
+    font-family: 'FarFromHomecoming';
+    src: url('src/FarFromHomecoming.otf') format('opentype');
+}
+
+/* Media */
+@media all and (max-width: 780px) {
+    nav {
+        display: none;
+    }    
+
+    header {
+        background-size: auto;
+    }
+
+    .container {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .actor {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .navbas {
+        display: inline-block;
+    }
+
+    .navbas ul, .navbas li {
+        display: inline-block;
+    }
+
+    .fmleft {
+        float: left;
+    }
+
+    .fmright {
+        text-align: right;
+    }
+
+    .navbas .logo {
+        display: none;
+    }
+}
